@@ -1,3 +1,112 @@
+/* Import the Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the Roboto font to the whole page */
 body {
-    background-color: #aa1010 !important; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e3f2fd; /* Light blue background from inline style */
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 20px; /* Add spacing below navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #007bff; /* Primary color for links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Header Section */
+#home {
+    text-align: center;
+    padding: 60px;
+    background-color: #ffffff; /* White background */
+}
+
+/* About Section */
+#about {
+    padding: 40px;
+}
+
+#about h2 {
+    border-bottom: 2px solid #007bff; /* Primary color border */
+    padding-bottom: 10px;
+}
+
+/* Work Section */
+#work {
+    padding: 40px;
+}
+
+#work ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#work li {
+    background: #f8f9fa; /* Light background for list items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Resume Section */
+#resume {
+    padding: 40px;
+}
+
+#resume a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Video Section */
+#video {
+    padding: 40px;
+    text-align: center;
+}
+
+.video-container iframe {
+    border: none;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
