@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Apply Custom Background Color -->
+    <style>
+        :root {
+            --bs-body-bg: #e3f2fd;
+            /* Example color: Light Blue */
+        }
+
+        body {
+            background-color: var(--bs-body-bg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#overview" class="nav-link px-2 link-secondary">Overview</a></li>
+                    <li><a href="#about" class="nav-link px-2 link-body-emphasis">About Me</a></li>
+                    <li><a href="#work" class="nav-link px-2 link-body-emphasis">My Work</a></li>
+                    <li><a href="#resume" class="nav-link px-2 link-body-emphasis">Resume</a></li>
+                    <li><a href="#contact" class="nav-link px-2 link-body-emphasis">Contact Me</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>OJ is a dedicated and passionate Full Stack Web Developer, currently honing his skills and knowledge as
+            a student at GoMyCode in Lagos. With a solid foundation in both front-end and back-end development, OJ is
+            driven by a deep-seated curiosity for how technology can be leveraged to solve real-world problems. His
+            journey in web development is marked by a commitment to mastering the full spectrum of web technologies,
+            from crafting intuitive user interfaces to building robust server-side applications.
+            <br><br>
+            Beyond the code, OJ is passionate about staying at the forefront of technological advancements. He regularly
+            engages in continuous learning, whether through online courses, reading the latest industry blogs, or
+            experimenting with new tools and technologies in his personal projects. This dedication to growth and
+            innovation not only makes him a proficient developer but also someone who’s ready to adapt to the
+            ever-evolving tech landscape.
+            <br><br>
+            Looking forward, OJ is excited to continue his journey in the world of web development. He aims to
+            contribute to innovative projects that push the boundaries of what’s possible on the web. Whether it's
+            through developing new features, optimizing performance, or enhancing user experience, OJ is committed to
+            making a meaningful impact in the tech industry.
+        </p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>My Work</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="path-to-your-resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="your-action-page.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>My Introduction Video</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cTe4DHC2Vy8?si=M4gJt57ovGMT6eNX"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 | OJ development.LTD. | All rights reserved.</p>
+    </footer>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
